@@ -1,0 +1,20 @@
+CREATE DATABASE veterinaria;
+
+use veterinaria;
+
+
+create table dono(
+codDono int primary key auto_increment,
+nome varchar(255),
+cpf varchar(20) unique,
+telefone varchar(20));
+
+create table animais(
+idanimal int primary key auto_increment,
+nome varchar(255),
+raca varchar(255),
+peso decimal(7,2),
+dono int,
+foreign key (dono) references dono(codDono)
+);
+
