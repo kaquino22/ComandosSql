@@ -2,8 +2,8 @@ use biblioteca;
 
     create table livro(
     codLivro int primary key auto_increment,
-    titulo varchar(150),
-    autor varchar(150),
+     autor varchar(150),
+    titulo varchar(150), 
     editora varchar(150),
     genero varchar(150)); 
     

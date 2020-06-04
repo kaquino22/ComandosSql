@@ -1,0 +1,44 @@
+use biblioteca;
+
+insert into livro(editora, titulo, autor, genero) values
+('j&j', 'Joãos de Feijão', 'João Jodosvaldo Julião','épico'),
+('Canforal', 'As Aventuras do Limão Sonhador', 'Lima Limeira Junior de Jesus','Aventura'),
+('Valorantindo', 'Valorant Nas Lives do Rezeendevil', 'João Rezende','Infantil'),
+('Weleda', 'Ansiodoron', 'Heitor Antônio','Medicinal'),
+('Riot Games', 'Ashe a Rainha Gélida', 'Riot Games','Moba e Ação'),
+('Zengar', 'Thor', 'Lil Nan Xan','épico'),
+('AuthenticGames', 'Authentic no Mundo Quadrado', 'Pedro Siqueira Junior','Aventura'),
+('BillWillians', 'Infraestrutura das Coisas', 'Bill Willians Living','Informática'),
+('ConstructLew', 'How to Make your House', 'Lew Canide Swain','Construção'),
+('NewSaga', 'Crepusculianos', 'Roander Levenia','Romance')
+
+
+insert into bibliotecario(nome,email,dataNascimento,telefone,cpf,rg,logradouro,bairro,cidade,uf,numero,complemento,cep) VALUES
+('Kauã Maia Aquino','kauaplayer22@gmail.com','2003-10-30',1199999999,50688832145,3124569234,'rua rio de janeiro','maua','são paulo','SP','967','casa b',09381050),
+('João Limão Rinhão silveirão','joliri@gmail.com','1995-04-26',1199999999,3255462643,555554444,'rua joão da silva sempreira','são paulo','são paulo','SP','42','casa j',095236753),
+('Lionice Rosas Vergamim','lioni@gmail.com','1978-02-14',1199999999,5345234634,5555424444,'rua das rosas azuis amareladas','são paulo','são paulo','SP','64','casa a',094125236)
+
+
+insert into cliente(nome,dataNascimento,telefone,email,turma) VALUES
+('Kauã Maia Aquino','2003-10-30',1193294124,'kauaplayer22@gmail.com','turma c'),
+('João Limão Vera verão','1994-05-24',1152323445,'joaolaovelao@gmail.com','turma a'),
+('Olivaldo Genivaldo','1992-04-14',1123423523,'geniolivaldo@gmail.com','turma e'),
+('Noel Lionel','2000-12-30',1193294324,'noliel@gmail.com','turma f'),
+('Placa Diesel','2002-11-20',1193333124,'pladiesel@gmail.com','turma w'),
+('Manoel Leonardo','2003-12-30',1193294124,'manoleo@gmail.com','turma a'),
+('Giovanna Oliana','2003-04-30',1193294124,'gioli@gmail.com','turma c'),
+('Juliana Floriana','2003-10-30',1193294124,'juliflo@gmail.com','turma c'),
+('Marael florel','2003-10-30',1193294124,'maralflo@gmail.com','turma c'),
+('gilson lionel','2003-10-30',1193294124,'giolio@gmail.com','turma c')
+
+insert into empresdevo (data_devolucao,data_emprestimo,registroaluno,codFunc,codLivro) VALUES
+('2020-10-30','2020-10-01',1,2,3),
+('2020-10-21','2020-10-05',2,2,2),
+('2020-10-13','2020-10-07',7,2,3),
+('2020-10-17','2020-10-08',3,2,3),
+('2020-10-19','2020-10-04',5,2,1),
+('2020-10-19','2020-10-11',10,2,1),
+('2020-10-31','2020-10-21',2,2,1),
+('2020-10-30','2020-10-26',4,2,2),
+('2020-10-27','2020-10-24',8,2,2),
+('2020-10-30','2020-10-28',9,2,2)
