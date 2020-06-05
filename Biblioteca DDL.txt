@@ -42,3 +42,17 @@ insert into empresdevo (data_devolucao,data_emprestimo,registroaluno,codFunc,cod
 ('2020-10-30','2020-10-26',4,2,2),
 ('2020-10-27','2020-10-24',8,2,2),
 ('2020-10-30','2020-10-28',9,2,2)
+
+alter table livro add column paginas int;
+alter table livro add column qtdeExemplares int;
+
+update livro set paginas = 120,qtdeExemplares = 39 WHERE codLivro = 1;
+update livro set paginas = 324,qtdeExemplares = 24 WHERE codLivro = 2;
+update livro set paginas = 125,qtdeExemplares = 7 WHERE codLivro = 3;
+update livro set paginas = 42,qtdeExemplares = 4 WHERE codLivro = 4;
+update livro set paginas = 546,qtdeExemplares = 2 WHERE codLivro = 5;
+update livro set paginas = 43,qtdeExemplares = 100 WHERE codLivro = 6;
+update livro set paginas = 378,qtdeExemplares = 20 WHERE codLivro = 7;
+update livro set paginas = 1001,qtdeExemplares = 1 WHERE codLivro = 8;
+update livro set paginas = 666,qtdeExemplares = 50 WHERE codLivro = 9;
+update livro set paginas = 420,qtdeExemplares = 10 WHERE codLivro = 10;
