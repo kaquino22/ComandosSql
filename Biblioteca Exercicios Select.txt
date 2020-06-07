@@ -1,0 +1,36 @@
+/* 1 */
+SELECT nome,dataNascimento FROM cliente WHERE nome LIKE 'j%'
+/* 2 */
+SELECT nome, email,dataNascimento FROM cliente where month(dataNascimento)='04'
+/* 3 */
+SELECT nome,email,dataNascimento FROM cliente where year(dataNascimento)='2000'
+/* 4 */
+SELECT *FROM cliente ORDER by turma desc
+/* 5 */
+SELECT titulo,autor,genero FROM livro where genero LIKE '%Ação%'
+/* 6 */
+SELECT COUNT(*) FROM livro
+/* 7 */
+SELECT titulo,autor, genero, from livro where autor ='Riot Games'
+/* 8 */
+SELECT data_emprestimo, data_devolucao, registroaluno FROM empresdevo where month(data_emprestimo)='10'
+/* 9 */
+SELECT data_emprestimo, data_devolucao, registroaluno FROM empresdevo WHERE data_emprestimo BETWEEN '2019-01-01' and '2020-12-31'
+/* 10 */
+SELECT * FROM `bibliotecario` WHERE cidade = 'são paulo'
+/* 11 */
+SELECT * FROM `bibliotecario` ORDER BY nome ASC
+/* 12 */
+SELECT * FROM livro ORDER BY genero
+/* 13 */
+SELECT * FROM livro WHERE editora = 'Riot Games'
+/* 14 */
+SELECT titulo,autor,genero,paginas FROM livro WHERE( autor ='Riot Games' OR genero LIKE '%Aventura%') and paginas<400
+/* 15 */
+SELECT *FROM livro WHERE titulo LIKE '%A%' and genero LIKE '%Aventura%'
+/* 16 */
+SELECT AVG(paginas) from livro
+/* 17 */
+SELECT sum(paginas) from livro
+/* 18 */
+SELECT * FROM `livro` WHERE qtdeExemplares BETWEEN 4 and 6
