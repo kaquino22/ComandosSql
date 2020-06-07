@@ -11,7 +11,7 @@ SELECT titulo,autor,genero FROM livro where genero LIKE '%Ação%'
 /* 6 */
 SELECT COUNT(*) FROM livro
 /* 7 */
-SELECT titulo,autor, genero, from livro where autor ='Riot Games'
+SELECT titulo,autor, genero from livro where autor ='Riot Games'
 /* 8 */
 SELECT data_emprestimo, data_devolucao, registroaluno FROM empresdevo where month(data_emprestimo)='10'
 /* 9 */
